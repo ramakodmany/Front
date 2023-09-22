@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action is where data is going
+    if it is empty it will send data to the same page -->
+
+    <!-- method =GET or POST 
+    GET : data in URL
+    
+    -->
+
+
+    <!-- inputs type:
+    hidden:send data thhat there is no need to appear in the web page
+    reset : reset data(button)
+    color 
+    range
+    number : accepte just numbers
+    radio
+    checkbox
+    File : to insert file
+    Search
+    URL: just accepte url
+    Data
+    datalist :You can search on it
+-->
+
+    <!-- 
+    Some attribues:
+            1-type
+            2-name :variable for backend
+            3-id
+            4-required :حقل اجباري
+            5-placeholder :شفافة
+            6-value :قيمة افتراضية
+            7-readonly : can't change the value but data will send
+            8-disabled :can't change the value & data will not send
+            9-autofocus 
+           10-minlength
+           11-maxlength
+           12-checked :default value checked
+
+    -->
+
+    <form action="" method="get" novalidate target="_blank">
+        <div>
+            <!-- for 
+           label تربط بين ال 
+            inputو ال  -->
+            <label for="user">UserName</label>
+            <input type="text" id="user" placeholder="UserName" name="user" value="rama" readonly>
+        </div>
+        <div>
+            <label for="pas">Password</label>
+            <input type="password" id="pas" required name="pass" autofocus minlength="5">
+
+        </div>
+        <div>
+            <label for="em">email</label>
+            <input type="email" id="em" name="email" value="rama@gmail.com" disabled>
+
+
+        </div>
+        <div>
+            <label for="color">color</label>
+            <input type="color" id="color" name="color" id="">
+        </div>
+        <div>
+            <label for="ra">Range</label>
+            <input type="range" id="ra" name="range" min="0" max="100" step="20" value="0">
+        </div>
+
+        <div>
+            <label for="num">number</label>
+            <input type="number" id="num" name="number" min="0" max="10" step="2" value="0">
+        </div>
+        <div>
+            <input type="radio" id="win" name="os" value="windows" checked>
+            <label for="win">windows</label>
+        </div>
+        <div>
+            <input type="radio" id="mac" name="os" value="mac">
+            <label for="mac">mac</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="win2" name="os" value="windows" checked>
+            <label for="win2">windows</label>
+        </div>
+        <div>
+            <input type="checkbox" id="mac2" name="os" value="mac">
+            <label for="mac2">mac</label>
+        </div>
+
+
+        <div>
+            <label for="book">chose book:</label>
+            <select name="book" id="book" multiple>
+                <optgroup label="Group 1">
+                    <option value="1" selected>Book 1</option>
+                    <option value="2">Book 2</option>
+                    <option value="3" >Book 3</option>
+                </optgroup>
+                <optgroup label="Group 2">
+                    <option value="4">Book 4</option>
+                    <option value="5">Book 5</option>
+                    <option value="6">Book 6</option>
+                </optgroup>
+
+                <!-- هي القيمة يلي رح تنبعت value 
+        book=1
+        book=2 -->
+            </select>
+        </div>
+        <textarea name="ta" id="ta" cols="30" rows="1">hi</textarea>
+        <br>
+        <div>
+            <label for="File">Choose file</label>
+            <input type="file" name="File" id="File">
+        </div>
+        <div>
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search">
+        </div>
+        <div>
+            <label for="">URL</label>
+            <input type="url" name="" id="">
+        </div>
+
+        <div>
+            <label for="da">Data</label>
+            <input type="date" name="da" id="da">
+        </div>
+        <div>
+            <label for="mo">Month</label>
+            <input type="month" name="mo" id="mo">
+        </div>
+        <div>
+            <label for="T">Time</label>
+            <input type="time" name="T" id="T">
+        </div>
+
+        <div>
+            <label >LIST</label>
+            <input list="Programming" name="prog">
+            <datalist id="Programming">
+                <option value="Python">
+                <option value="C">
+                <option value="C++">
+                <option value="JAVA">
+                    <!-- no need to close <option> -->
+            </datalist>
+        </div>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

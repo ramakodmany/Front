@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="post" autocomplete="on">
+        <fieldset>
+            <legend> User information</legend>
+            <div>
+                <label for="firstn">User name</label>
+                <input type="text" name="firstn" id="firstn">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password">
+            </div>
+
+            <div>
+                <label for="summary">summary:</label>
+                <textarea name="summary" id="summary" cols="10" rows="1"></textarea>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Choise option</legend>
+            <div>
+                drinks: <br>
+                <label for="tea">tea</label>
+                <input type="checkbox" name="tea" id="tea">
+            </div>
+
+            <div>
+                Gender: <br>
+                <label for="male">male</label>
+                <input type="radio" name="gender" id="male">
+
+                <label for="female">female</label>
+                <input type="radio" name="gender" id="female"> <br>
+            </div>
+<div>
+    <label for="city">city :</label>
+    <select name="city" id="city" multiple>
+        <option value="dam">damascus</option>
+        <optgroup label="M">
+       
+        <option value="homs">homs</option>
+        <option value="hama" selected>hama</option>
+             
+    </optgroup>
+        <option value="alp">Aleepo</option>
+        <option value="daraa">daraa</option>
+    </select>
+</div>
+        </fieldset>
+        <input type="submit" name="send" id="send" value="send">
+        <input type="reset" value="cancel">
+
+    </form>
+
+</body>
+
+</html>
